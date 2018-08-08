@@ -370,8 +370,6 @@ var scoreUtilisateur = 0;
 var scoreOrdinateur = 0;
 var scoreFinal = 0;
 
-document.getElementById("clickMe").onclick = comparer();
-
 function comparer (choix1, choix2) {
 
 //Egalité
@@ -420,6 +418,8 @@ function comparer (choix1, choix2) {
 }
 
 while (scoreFinal != 3){
+
+var username = prompt("Quel est ton nom ?").toLowerCase();
 
 var choixUtilisateur = prompt("Pierre, feuille, ciseaux ?").toLowerCase();
 
