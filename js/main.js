@@ -55,7 +55,7 @@
 
 /*calcul age*/
 //
-// var nait = prompt("Ton année de naissance ?");
+  // var nait = prompt("Ton année de naissance ?");
 // var annee = prompt("En quelle année est on ?");
 // console.log(annee - nait);
 
@@ -369,6 +369,8 @@
 var scoreUtilisateur = 0;
 var scoreOrdinateur = 0;
 var scoreFinal = 0;
+
+document.getElementById("clickMe").onclick = comparer();
 
 function comparer (choix1, choix2) {
 
