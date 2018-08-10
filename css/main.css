@@ -97,49 +97,97 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  .enternamea{
+    border : 5px dashed black;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+  }
+
+  .validate{
+    border : none;
+    font-weight: bold;
+    height: 50px;
+    border-color: black;
+  }
+
+  .inputname{
+    text-align: center;
+  }
+
    body {
    background-image:url("../img/bck.jpg");
    background-size: cover;
    background-repeat: round;
-   height: 250px;
+   height: 255px;
    overflow: hidden;
+   user-select : none;
    }
 
 .sky{
   width : 100%;
   height : 180px;
+  user-select : none;
 }
 
 .sky2 video{
   margin-top: -60px;
   margin-bottom: 45px;
+  user-select : none;
 }
 
 .sky3 video{
   margin-top: -50px;
   margin-bottom: 45px;
+  user-select : none;
+}
+
+.case{
+  margin-top: 200px;
+}
+
+.name .tag{
+  margin-right: 350px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.name .boss{
+  margin-left: 300px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .perso .chara1{
   margin-right: 750px!important;
+  user-select : none;
+}
+
+.perso .all2 .chara2{
+  user-select : none;
 }
 
 .choice button:hover{
   background-color: lightgrey;
+  user-select : none;
 }
 
 .front, .front img{
   margin-top: -1px;
   width : 60%;
+  user-select : none;
 }
 
 .front .front-spec{
   margin-left: 50%;
+  user-select : none;
 }
 
 
 
-
+/* font-family: 'IBM Plex Mono', monospace; */
 
 /* ==========================================================================
    Helper classes

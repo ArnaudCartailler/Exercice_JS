@@ -17,10 +17,20 @@
   <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
   <link href="css/ct-navbar.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 </head>
 
 <body>
 
+  <div id="allentername" class="entername" style="width:100%; height:100vh;">
+      <div class="enternamea w-25 bg-light mx-auto pt-2 pb-2 text-center" style="margin-top: 12%;">
+        <p class="text-center battle mt-2">C'est quoi ton petit nom ?</p>
+        <!-- <form> -->
+          <input id="enternameid" class="inputname w-75" type="" placeholder=""/>
+          <input id="validateenter" class=" validate mt-2" type="button" value="Valider"/>
+        <!-- </form> -->
+      </div>
+  </div>
 
 <div class="sky d-flex m-0">
     <video src="img/sky.webm" autoplay loop></video>
@@ -48,18 +58,31 @@
     <video src="img/sky.webm" height ="50" autoplay loop></video>
 </div>
 
-<div class="choice d-flex justify-content-left">
-  <button><img class="rock" src="img/rock.png" height="70"></button>
-  <button><img class="paper" src="img/paper.png" height="70"></button>
-  <button><img class="cissors" src="img/cissors.png" height="30"></button>
+<div class=" case position-absolute d-flex justify-content-left">
+  <button id="rock" class="choice"><img src="img/rock.png"  height="70"></button>
+  <button id="paper" class="choice"><img  src="img/paper.png" height="70"></button>
+  <button id="cissors" class="choice"><img src="img/cissors.png" height="30"></button>
 </div>
+
+
+    <div class="name d-flex w-100 d-flex justify-content-around">
+      <p id="playername" class="tag"></p>
+
+      <p class="boss ml-5">BOSS</p>
+    </div>
 
 <div class="perso img-fluid d-flex justify-content-center">
   <img class="chara1 mr-5" src="img/perso1.gif" height="150">
-  <img class="chara2 ml-5" src="img/figther.gif" height="150">
+      <img class="chara2 ml-5" src="img/figther.gif" height="150">
+    </div>
 </div>
 
-<div class="front w-100 img-fluid d-flex">
+<div class="score">
+  <p id="scoreplayer"></p>
+  <p id="scorebot"></p>
+</div>
+
+<div class="front mt-4 w-100 img-fluid d-flex">
   <img src="img/front.jpg" height="150">
   <img src="img/front.jpg" height="150">
   <img src="img/front.jpg" height="150">
@@ -77,7 +100,6 @@
 <script src="js/jquery-1.10.2.js"></script>
  <script src="js/bootstrap.js"></script>
  <script src="js/ct-navbar.js"></script>
- <script>$('.dropdown-toggle').dropdown()</script>
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
