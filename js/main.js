@@ -533,11 +533,17 @@ var liste_choix = ['rock', 'paper', 'cissors'];
 
     }
 
-    if (player===3){
+    if (player===4){
+      document.getElementById("rock").style.display = "none";
+      document.getElementById("paper").style.display = "none";
+      document.getElementById("cissors").style.display = "none";
       document.getElementById("talkplayer").innerHTML = "I win !";
       return;
     }
-    else if (boss===3){
+    else if (boss===4){
+      document.getElementById("rock").style.display = "none";
+      document.getElementById("paper").style.display = "none";
+      document.getElementById("cissors").style.display = "none";
       document.getElementById("choicebot").innerHTML = "You loose !";
       return;
     }
