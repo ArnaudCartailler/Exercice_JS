@@ -153,6 +153,27 @@ textarea {
   text-transform: uppercase;
 }
 
+.name2{
+  width: 100%;
+  position: absolute;
+}
+
+.name2 .scoreplayer{
+  margin-right: 350px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  font-weight: bold;
+    margin-left: 380px;
+}
+
+.name2 .scorebot{
+  margin-left: 100px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
 .name .boss{
   margin-left: 300px;
   font-family: 'IBM Plex Mono', monospace;
@@ -170,12 +191,29 @@ textarea {
 }
 
 .choice button:hover{
-  background-color: lightgrey;
   user-select : none;
 }
 
+.name .choicebot{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.name .talkplayer{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .front, .front img{
-  margin-top: -1px;
+  margin-top: -20px;
+  width : 60%;
+  user-select : none;
+}
+
+.front, .front2 img{
+  margin-top: -25px;
   width : 60%;
   user-select : none;
 }

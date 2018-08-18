@@ -534,11 +534,19 @@ var liste_choix = ['rock', 'paper', 'cissors'];
     }
 
     if (player===3){
-      console.log("Bravo ! Vous avez gagné !!");
+      document.getElementById("talkplayer").innerHTML = "I win !";
+      return;
+    }
+    else if (boss===3){
+      document.getElementById("choicebot").innerHTML = "You loose !";
+      return;
     }
     else {
-      console.log("Dommage..");
+      document.getElementById("talkplayer").innerHTML = "continue !";
     }
 
+document.getElementById("scorebot").innerHTML = boss;
+document.getElementById("scoreplayer").innerHTML = player;
+document.getElementById("choicebot").innerHTML = "I've chosen " + ordi;
 
 }
