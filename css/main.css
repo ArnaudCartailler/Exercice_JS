@@ -141,8 +141,9 @@ textarea {
   user-select : none;
 }
 
-.case{
+.case .choice{
   margin-top: 200px;
+  margin-left: 50px;
 }
 
 .name .tag{
@@ -155,24 +156,86 @@ textarea {
 
 .name2{
   width: 100%;
-  position: absolute;
+  position: fixed;
 }
 
 .name2 .scoreplayer{
-  margin-right: 350px;
+  margin-right: 450px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 22px;
   font-weight: bold;
-    margin-left: 380px;
+  margin-left: 380px;
+}
+
+.name button{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  position: absolute;
+  left: 580px;
 }
 
 .name2 .scorebot{
-  margin-left: 100px;
+  margin-right: 450px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 22px;
   font-weight: bold;
 }
 
+.perso .charattack{
+  bottom : 90px;
+  right : 100px;
+  bottom : 60px;
+}
+
+.perso .charattack2{
+  bottom : 90px;
+  right : 20px;
+  bottom : 200px;
+}
+
+.perso .charattack3{
+  bottom : 90px;
+  right : 20px;
+  bottom : 80px;
+}
+
+.perso .charattack4{
+  bottom : 90px;
+  right : 20px;
+  bottom : 80px;
+}
+
+.perso .charattack5{
+  bottom : 90px;
+  right : 20px;
+  bottom : 180px;
+}
+
+.perso .charattack6{
+  bottom : 60px;
+}
+
+.perso .charattack7{
+  bottom : 80px;
+  right : 150px;
+}
+
+.perso .charattack8{
+  bottom : 100px;
+  right : 100px;
+}
+
+.perso .charattack9{
+  bottom : 100px;
+  right : 100px;
+}
+
+.perso .charattack10{
+  bottom : 150px;
+  right : 70px;
+}
 
 .name .boss{
   margin-left: 300px;
@@ -184,10 +247,13 @@ textarea {
 .perso .chara1{
   margin-right: 750px!important;
   user-select : none;
+  position: absolute;
 }
 
-.perso .all2 .chara2{
+.perso .chara2{
   user-select : none;
+  position: relative;
+  left : 250px;
 }
 
 .choice button:hover{
@@ -198,16 +264,17 @@ textarea {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 15px;
   font-weight: bold;
+  bottom: 350px;
 }
 
 .name .talkplayer{
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 15px;
+  font-size: 35px;
   font-weight: bold;
 }
 
 .front, .front img{
-  margin-top: -20px;
+  margin-top: -80px;
   width : 60%;
   user-select : none;
 }

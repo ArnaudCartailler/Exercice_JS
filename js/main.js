@@ -486,6 +486,29 @@ for (i=0; i < divs.length; i++){
   };
 }
 
+
+
+// function myMove2() {
+//   var elem = document.getElementById("chara2");
+//   var pos = 0;
+//   var id = setInterval(frame, 10);
+//   function frame() {
+//     if (pos == 350) {
+//       clearInterval(id);
+//     } else {
+//       pos++;
+//       elem.style.left = pos + 'px';
+//     }
+//   }
+// }
+document.getElementById("charattack").style.display = "none";
+document.getElementById("charadef").style.display = "none";
+document.getElementById("chara2def").style.display = "none";
+document.getElementById("chara2attack").style.display = "none";
+document.getElementById("fighterloose").style.display = "none";
+document.getElementById("perso1loose").style.display = "none";
+document.getElementById("persowin").style.display = "none";
+document.getElementById("fighterwin").style.display = "none";
 function game(element){
 
 var liste_choix = ['rock', 'paper', 'cissors'];
@@ -501,10 +524,32 @@ var liste_choix = ['rock', 'paper', 'cissors'];
         if (ordi=== 'cissors') {
             player++;
             console.log("La pierre gagne ! Tu gagnes 1 point !");
+            document.getElementById("chara1").style.display = "none";
+            document.getElementById("charattack").style.display = "block";
+            document.getElementById("charadef").style.display = "none";
+            document.getElementById("chara2").style.display = "none";
+            document.getElementById("chara2def").style.display = "block";
+            document.getElementById("chara2attack").style.display = "none";
+            document.getElementById("fighterloose").style.display = "none";
+          document.getElementById("perso1loose").style.display = "none";
+          document.getElementById("persowin").style.display = "none";
+          document.getElementById("fighterwin").style.display = "none";
+
         }
         else {
             boss++;
             console.log("La feuille gagne ! L''ordinateur gagne 1 point");
+            document.getElementById("chara1").style.display = "none";
+            document.getElementById("charattack").style.display = "none";
+            document.getElementById("charadef").style.display = "block";
+            document.getElementById("chara2").style.display = "none";
+            document.getElementById("chara2def").style.display = "none";
+            document.getElementById("chara2attack").style.display = "block";
+            document.getElementById("fighterloose").style.display = "none";
+          document.getElementById("perso1loose").style.display = "none";
+          document.getElementById("persowin").style.display = "none";
+          document.getElementById("fighterwin").style.display = "none";
+
         }
     }
 
@@ -513,10 +558,32 @@ var liste_choix = ['rock', 'paper', 'cissors'];
         if (ordi === 'rock') {
               player++;
             console.log("La feuille gagne ! Tu gagnes 1 point !");
+            document.getElementById("chara1").style.display = "none";
+            document.getElementById("charattack").style.display = "block";
+            document.getElementById("charadef").style.display = "none";
+            document.getElementById("chara2").style.display = "none";
+            document.getElementById("chara2def").style.display = "block";
+            document.getElementById("chara2attack").style.display = "none";
+            document.getElementById("fighterloose").style.display = "none";
+          document.getElementById("perso1loose").style.display = "none";
+          document.getElementById("persowin").style.display = "none";
+          document.getElementById("fighterwin").style.display = "none";
+
         }
         else {
           boss++;
             console.log("Le ciseaux gagnent ! L'ordinateur gagne 1 point");
+            document.getElementById("chara1").style.display = "none";
+            document.getElementById("charattack").style.display = "none";
+            document.getElementById("charadef").style.display = "block";
+            document.getElementById("chara2").style.display = "none";
+            document.getElementById("chara2def").style.display = "none";
+            document.getElementById("chara2attack").style.display = "block";
+            document.getElementById("fighterloose").style.display = "none";
+          document.getElementById("perso1loose").style.display = "none";
+          document.getElementById("persowin").style.display = "none";
+          document.getElementById("fighterwin").style.display = "none";
+
         }
     }
 
@@ -525,31 +592,81 @@ var liste_choix = ['rock', 'paper', 'cissors'];
         if (ordi === 'paper') {
               player++;
             console.log("Le ciseaux gagne ! Tu gagnes 1 point !");
+            document.getElementById("chara1").style.display = "none";
+            document.getElementById("charattack").style.display = "block";
+            document.getElementById("charadef").style.display = "none";
+            document.getElementById("chara2").style.display = "none";
+            document.getElementById("chara2def").style.display = "block";
+            document.getElementById("chara2attack").style.display = "none";
+            document.getElementById("fighterloose").style.display = "none";
+          document.getElementById("perso1loose").style.display = "none";
+          document.getElementById("persowin").style.display = "none";
+          document.getElementById("fighterwin").style.display = "none";
+
         }
         else {
           boss++;
             console.log("La pierre gagne ! L'ordinateur gagne 1 point");
+            document.getElementById("chara1").style.display = "none";
+            document.getElementById("charattack").style.display = "none";
+            document.getElementById("charadef").style.display = "block";
+            document.getElementById("chara2").style.display = "none";
+            document.getElementById("chara2def").style.display = "none";
+            document.getElementById("chara2attack").style.display = "block";
+            document.getElementById("fighterloose").style.display = "none";
+          document.getElementById("perso1loose").style.display = "none";
+          document.getElementById("persowin").style.display = "none";
+          document.getElementById("fighterwin").style.display = "none";
+
         }
 
     }
 
-    if (player===4){
-      document.getElementById("rock").style.display = "none";
-      document.getElementById("paper").style.display = "none";
-      document.getElementById("cissors").style.display = "none";
-      document.getElementById("talkplayer").innerHTML = "I win !";
-      return;
-    }
-    else if (boss===4){
-      document.getElementById("rock").style.display = "none";
-      document.getElementById("paper").style.display = "none";
-      document.getElementById("cissors").style.display = "none";
-      document.getElementById("choicebot").innerHTML = "You loose !";
-      return;
-    }
-    else {
-      document.getElementById("talkplayer").innerHTML = "continue !";
-    }
+    if (player===3){
+        document.getElementById("rock").style.display = "none";
+        document.getElementById("paper").style.display = "none";
+        document.getElementById("cissors").style.display = "none";
+        document.getElementById("stateoverlay").style.display = "block";
+        document.getElementById("stateoverlaywin").style.display = "block";
+        document.getElementById("stateoverlayloose").style.display = "none";
+        document.getElementById("fighterloose").style.display = "block";
+        document.getElementById("charattack").style.display = "none";
+        document.getElementById("charadef").style.display = "none";
+        document.getElementById("chara2def").style.display = "none";
+        document.getElementById("chara2attack").style.display = "none";
+        document.getElementById("chara1").style.display = "none";
+        document.getElementById("chara2").style.display = "none";
+        document.getElementById("persowin").style.display = "block";
+        document.getElementById("fighterwin").style.display = "none";
+
+
+
+        return;
+      }
+      else if (boss===3){
+        document.getElementById("rock").style.display = "none";
+        document.getElementById("paper").style.display = "none";
+        document.getElementById("cissors").style.display = "none";
+        document.getElementById("stateoverlay").style.display = "block";
+        document.getElementById("stateoverlaywin").style.display = "none";
+        document.getElementById("stateoverlayloose").style.display = "block";
+        document.getElementById("perso1loose").style.display = "block";
+        document.getElementById("charattack").style.display = "none";
+        document.getElementById("charadef").style.display = "none";
+        document.getElementById("chara2def").style.display = "none";
+        document.getElementById("chara2attack").style.display = "none";
+        document.getElementById("chara1").style.display = "none";
+        document.getElementById("chara2").style.display = "none";
+        document.getElementById("persowin").style.display = "none";
+        document.getElementById("fighterwin").style.display = "block";
+
+
+        return;
+      }
+      else {
+        document.getElementById("talkplayer").innerHTML = "";
+      }
+
 
 document.getElementById("scorebot").innerHTML = boss;
 document.getElementById("scoreplayer").innerHTML = player;

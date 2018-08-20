@@ -68,9 +68,9 @@
 </div>
 
 <div class=" case position-absolute d-flex justify-content-left">
-  <button id="rock" class="choice"><img src="img/rock.png"  height="70"></button>
-  <button id="paper" class="choice"><img  src="img/paper.png" height="70"></button>
-  <button id="cissors" class="choice"><img src="img/cissors.png" height="30"></button>
+  <button onclick="myMove()" id="rock" class="choice"><img src="img/rock.png"  height="70"></button>
+  <button onclick="myMove()"id="paper" class="choice"><img  src="img/paper.png" height="70"></button>
+  <button onclick="myMove()" id="cissors" class="choice"><img src="img/cissors.png" height="30"></button>
 </div>
 
 
@@ -80,17 +80,30 @@
         <p id="scoreplayer" class="scoreplayer"></p>
         <p id="talkplayer" class="talkplayer"></p>
       </div>
+      <div id="stateoverlay" style="text-align: center;padding-top: 20%;width: 100%;height: 100%;position: absolute;display:none;z-index:999;">
+           <div id="stateoverlaywin" class="text-light font-weight-bold">YOU WIN </div>
+           <div id="stateoverlayloose" class="text-light font-weight-bold">YOU LOOSE</div>
+           <button onclick='window.location.reload(false)' value="Rafraichir">Continue?</button>
+        </div>
       <div class="allbot">
         <p class="boss ml-5">BOSS</p>
         <p id="scorebot" class="scorebot"></p>
-        <p id="choicebot" class="choicebot"></p>
+        <p id="choicebot" class="choicebot position-absolute"></p>
       </div>
     </div>
 
 <div class="perso img-fluid d-flex justify-content-center">
-  <img class="chara1 mr-5" src="img/perso1.gif" height="150">
-      <img class="chara2 ml-5" src="img/figther.gif" height="150">
-    </div>
+  <img id="chara1" class="charattack position-relative mr-5" src="img/perso1.gif" height="200">
+  <img id="charattack" class="charattack2 position-relative mr-5" src="img/perso1attack.gif" height="370">
+  <img id="charadef" class="charattack3 position-relative mr-5" src="img/perso1def.gif" height="230">
+  <img id="perso1loose" class="charattack4 position-relative mr-5" src="img/perso1loose.gif" height="180">
+  <img id="persowin" class="charattack5 position-relative mr-5" src="img/persowin.gif" height="350">
+  <img id="chara2" class="charattack6 position-relative mr-5" src="img/fighter.gif" height="200">
+  <img id="chara2def" class="charattack7 position-relative mr-5" src="img/fighterdef.gif" height="200">
+  <img id="chara2attack" class="charattack8 position-relative mr-5" src="img/fighterattack.gif" height="250">
+  <img id="fighterloose" class="charattack9 position-relative mr-5" src="img/fighterloose.gif" height="270">
+  <img id="fighterwin" class="charattack10 position-relative mr-5" src="img/fighterwin.gif" height="260">
+
 </div>
 
 
