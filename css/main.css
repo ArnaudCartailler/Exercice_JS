@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
   .enternamea{
-    border : 5px dashed black;
+    border : 5px solid black;
     font-family: 'IBM Plex Mono', monospace;
     text-align: center;
   }
@@ -117,52 +117,44 @@ textarea {
    body {
    background-image:url("../img/bck.jpg");
    background-size: cover;
-   background-repeat: round;
-   height: 255px;
+   width : auto;
    overflow: hidden;
    user-select : none;
    }
-
-.sky{
-  width : 100%;
-  height : 180px;
-  user-select : none;
-}
-
-.sky2 video{
-  margin-top: -60px;
-  margin-bottom: 45px;
-  user-select : none;
-}
-
-.sky3 video{
-  margin-top: -50px;
-  margin-bottom: 45px;
-  user-select : none;
-}
 
 .case .choice{
   margin-top: 200px;
   margin-left: 50px;
 }
 
+.case button{
+  border : 2px dashed black;
+  font-family: 'IBM Plex Mono', monospace;
+  box-shadow: 1px 1px 5px white;
+}
+
+.case button:hover{
+background-color: white;
+}
+
 .name .tag{
   margin-right: 350px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .name2{
   width: 100%;
-  position: fixed;
+  top :20px;
+  position: absolute;
 }
 
 .name2 .scoreplayer{
   margin-right: 450px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
   margin-left: 380px;
 }
@@ -174,95 +166,34 @@ textarea {
   margin-top: 20px;
   position: absolute;
   left: 580px;
+  border : 5px dashed black;
+  text-align: center;
 }
 
 .name2 .scorebot{
   margin-right: 450px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
 }
 
-.perso .charattack{
-  bottom : 90px;
-  right : 100px;
-  bottom : 60px;
-}
-
-.perso .charattack2{
-  bottom : 90px;
-  right : 20px;
-  bottom : 200px;
-}
-
-.perso .charattack3{
-  bottom : 90px;
-  right : 20px;
-  bottom : 80px;
-}
-
-.perso .charattack4{
-  bottom : 90px;
-  right : 20px;
-  bottom : 80px;
-}
-
-.perso .charattack5{
-  bottom : 90px;
-  right : 20px;
-  bottom : 180px;
-}
-
-.perso .charattack6{
-  bottom : 60px;
-}
-
-.perso .charattack7{
-  bottom : 80px;
-  right : 150px;
-}
-
-.perso .charattack8{
-  bottom : 100px;
-  right : 100px;
-}
-
-.perso .charattack9{
-  bottom : 100px;
-  right : 100px;
-}
-
-.perso .charattack10{
-  bottom : 150px;
-  right : 70px;
-}
 
 .name .boss{
   margin-left: 300px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
 }
 
-.perso .chara1{
-  margin-right: 750px!important;
-  user-select : none;
-  position: absolute;
-}
-
-.perso .chara2{
-  user-select : none;
-  position: relative;
-  left : 250px;
-}
-
-.choice button:hover{
-  user-select : none;
+.name button{
+  background-color: white;
+  color: black;
 }
 
 .name .choicebot{
+  position : absolute;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   bottom: 350px;
 }
@@ -273,27 +204,43 @@ textarea {
   font-weight: bold;
 }
 
-.front, .front img{
-  margin-top: -80px;
-  width : 60%;
-  user-select : none;
+.perso{
+  margin-top:30%;
+  margin-left: 35%;
+  width:100%;
+  height : 300px;
 }
 
-.front, .front2 img{
-  margin-top: -25px;
-  width : 60%;
-  user-select : none;
+.perso .thanosattack{
+  bottom: 15px;
 }
 
-.front .front-spec{
-  margin-left: 50%;
-  user-select : none;
+.perso .IRdef{
+  left:20%;
 }
 
+.perso .IRattack{
+  width :auto;
+  bottom: 15px;
+}
 
+.perso .IRdef{
+  margin-bottom: 200px;
+}
 
-/* font-family: 'IBM Plex Mono', monospace; */
+.perso .thanosdef{
+  width : auto;
+  left : 75%;
+}
 
+.perso .thanoswin{
+  bottom : 20px;
+  left : 60%;
+}
+
+.perso .IRwin{
+  bottom : 20px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
